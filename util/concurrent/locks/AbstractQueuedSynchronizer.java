@@ -135,6 +135,21 @@ public abstract class AbstractQueuedSynchronizer
             this.thread = thread;
         }
     }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	// 等待队列头部，延迟初始化，直到调用enq才真正初始化
     private transient volatile Node head;
 
