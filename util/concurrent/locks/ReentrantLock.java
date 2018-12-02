@@ -40,7 +40,7 @@ public class ReentrantLock implements Lock, java.io.Serializable {
             else if (current == getExclusiveOwnerThread()) {
                 // 增加重入次数
 				int nextc = c + acquires;
-                if (nextc < 0) // overflow
+                if (nextc < 0) // overflow 这个状态值越界，则会抛出异常提示
                     throw new Error("Maximum lock count exceeded");
                 // 设置状态
 				setState(nextc);
@@ -50,6 +50,10 @@ public class ReentrantLock implements Lock, java.io.Serializable {
         }
 		
 		// 试图在独占模式下获取对象状态，此方法应该查询是否允许它在共享模式下获取对象状态，如果允许则获取它
+		/**
+		* 这个方法可以认为就是一个设置锁状态的操作，而且是将状态减掉传入的参数值（参数是1），如果结果状态为0，就将排它锁的Owner设置为null,
+		* 以使得其他的线程有机会进行执行。
+		*/
         protected final boolean tryRelease(int releases) {
             int c = getState() - releases;
 			// 当前线程不是独占模式，则抛出异常
@@ -66,6 +70,8 @@ public class ReentrantLock implements Lock, java.io.Serializable {
             setState(c);
             return free;
         }
+		
+		
 		// 判断资源是否被当前线程占有
         protected final boolean isHeldExclusively() {
             // While we must in general read state before owner,
@@ -83,7 +89,7 @@ public class ReentrantLock implements Lock, java.io.Serializable {
             return getState() == 0 ? null : getExclusiveOwnerThread();
         }
 
-		// 返回状态
+		//当前线程对锁的持有数。
         final int getHoldCount() {
             return isHeldExclusively() ? getState() : 0;
         }
@@ -156,7 +162,7 @@ public class ReentrantLock implements Lock, java.io.Serializable {
                     return true;
                 }
             }
-			// 状态不为0， 即资源已经被当前线程独占
+			// 状态不为0， 即资源已经被当前线程独占。 重入锁逻辑 和非公平锁一样 不解释
             else if (current == getExclusiveOwnerThread()) {
                 // 下一个状态
 				int nextc = c + acquires;
@@ -192,7 +198,7 @@ public class ReentrantLock implements Lock, java.io.Serializable {
         sync.lock();
     }
 
-    
+    // 调用AQS的acquireInterruptibly，跟acquire一样，只是这个方法可以响应中断。
     public void lockInterruptibly() throws InterruptedException {
         sync.acquireInterruptibly(1);
     }

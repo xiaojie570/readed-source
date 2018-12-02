@@ -275,7 +275,7 @@ public abstract class AbstractQueuedSynchronizer
         node.prev = null;
     }
 
-    
+
     private void unparkSuccessor(Node node) {
         
         int ws = node.waitStatus;
@@ -870,8 +870,8 @@ public abstract class AbstractQueuedSynchronizer
         // addWaiter(Node.EXCLUSIVE)：方法返回刚刚创建的node对象，然后调用acquireQueued()方法
 		// 该方法如果获取锁失败并被唤醒，且被中断了，那么执行selfInterrupt()方法
 		if (!tryAcquire(arg) &&
-            acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
-            selfInterrupt();
+                acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
+        selfInterrupt();
     }
 
     // 与acquire方法相同，但在同步队列中进行等待的时候可以检测中断
