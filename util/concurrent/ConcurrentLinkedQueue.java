@@ -1,37 +1,3 @@
-/*
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
-/*
- *
- *
- *
- *
- *
- * Written by Doug Lea and Martin Buchholz with assistance from members of
- * JCP JSR-166 Expert Group and released to the public domain, as explained
- * at http://creativecommons.org/publicdomain/zero/1.0/
- */
 
 package java.util.concurrent;
 
@@ -45,63 +11,6 @@ import java.util.Spliterator;
 import java.util.Spliterators;
 import java.util.function.Consumer;
 
-/**
- * An unbounded thread-safe {@linkplain Queue queue} based on linked nodes.
- * This queue orders elements FIFO (first-in-first-out).
- * The <em>head</em> of the queue is that element that has been on the
- * queue the longest time.
- * The <em>tail</em> of the queue is that element that has been on the
- * queue the shortest time. New elements
- * are inserted at the tail of the queue, and the queue retrieval
- * operations obtain elements at the head of the queue.
- * A {@code ConcurrentLinkedQueue} is an appropriate choice when
- * many threads will share access to a common collection.
- * Like most other concurrent collection implementations, this class
- * does not permit the use of {@code null} elements.
- *
- * <p>This implementation employs an efficient <em>non-blocking</em>
- * algorithm based on one described in <a
- * href="http://www.cs.rochester.edu/u/michael/PODC96.html"> Simple,
- * Fast, and Practical Non-Blocking and Blocking Concurrent Queue
- * Algorithms</a> by Maged M. Michael and Michael L. Scott.
- *
- * <p>Iterators are <i>weakly consistent</i>, returning elements
- * reflecting the state of the queue at some point at or since the
- * creation of the iterator.  They do <em>not</em> throw {@link
- * java.util.ConcurrentModificationException}, and may proceed concurrently
- * with other operations.  Elements contained in the queue since the creation
- * of the iterator will be returned exactly once.
- *
- * <p>Beware that, unlike in most collections, the {@code size} method
- * is <em>NOT</em> a constant-time operation. Because of the
- * asynchronous nature of these queues, determining the current number
- * of elements requires a traversal of the elements, and so may report
- * inaccurate results if this collection is modified during traversal.
- * Additionally, the bulk operations {@code addAll},
- * {@code removeAll}, {@code retainAll}, {@code containsAll},
- * {@code equals}, and {@code toArray} are <em>not</em> guaranteed
- * to be performed atomically. For example, an iterator operating
- * concurrently with an {@code addAll} operation might view only some
- * of the added elements.
- *
- * <p>This class and its iterator implement all of the <em>optional</em>
- * methods of the {@link Queue} and {@link Iterator} interfaces.
- *
- * <p>Memory consistency effects: As with other concurrent
- * collections, actions in a thread prior to placing an object into a
- * {@code ConcurrentLinkedQueue}
- * <a href="package-summary.html#MemoryVisibility"><i>happen-before</i></a>
- * actions subsequent to the access or removal of that element from
- * the {@code ConcurrentLinkedQueue} in another thread.
- *
- * <p>This class is a member of the
- * <a href="{@docRoot}/../technotes/guides/collections/index.html">
- * Java Collections Framework</a>.
- *
- * @since 1.5
- * @author Doug Lea
- * @param <E> the type of elements held in this collection
- */
 public class ConcurrentLinkedQueue<E> extends AbstractQueue<E>
         implements Queue<E>, java.io.Serializable {
     private static final long serialVersionUID = 196745693267521676L;
@@ -178,6 +87,8 @@ public class ConcurrentLinkedQueue<E> extends AbstractQueue<E>
      */
 
     private static class Node<E> {
+        // Node节点主要包含了两个域：一个是数据域item，另一个是next指针，用于指向下一个节点从而构成链式队列。
+        // 并且都是用volatile进行修饰的，以保证内存可见性
         volatile E item;
         volatile Node<E> next;
 
@@ -189,14 +100,17 @@ public class ConcurrentLinkedQueue<E> extends AbstractQueue<E>
             UNSAFE.putObject(this, itemOffset, item);
         }
 
+        // 更改 Node 中的数据域 item
         boolean casItem(E cmp, E val) {
             return UNSAFE.compareAndSwapObject(this, itemOffset, cmp, val);
         }
 
+        // 更改 Node 中的指针域 next
         void lazySetNext(Node<E> val) {
             UNSAFE.putOrderedObject(this, nextOffset, val);
         }
 
+        // 更改 Node 中的指针域 next
         boolean casNext(Node<E> cmp, Node<E> val) {
             return UNSAFE.compareAndSwapObject(this, nextOffset, cmp, val);
         }
@@ -250,7 +164,7 @@ public class ConcurrentLinkedQueue<E> extends AbstractQueue<E>
     private transient volatile Node<E> tail;
 
     /**
-     * Creates a {@code ConcurrentLinkedQueue} that is initially empty.
+     * 说明ConcurrentLinkedQueue通过持有头尾指针进行管理队列
      */
     public ConcurrentLinkedQueue() {
         head = tail = new Node<E>(null);
@@ -317,17 +231,22 @@ public class ConcurrentLinkedQueue<E> extends AbstractQueue<E>
     }
 
     /**
-     * Inserts the specified element at the tail of this queue.
-     * As the queue is unbounded, this method will never return {@code false}.
+     * offer 方法中调用了很多 Node 内部类提供的 CAS 操作
      *
-     * @return {@code true} (as specified by {@link Queue#offer})
+     * @return {@code true} 在循环体CAS操作成功会直接return返回
      * @throws NullPointerException if the specified element is null
      */
     public boolean offer(E e) {
         checkNotNull(e);
+        // 入队前，创建一个入队节点
         final Node<E> newNode = new Node<E>(e);
 
+        // 死循环，入队不成功反复入队。只有初始化条件没有循环结束条件
+        // Node<E> t = tail --》 创建一个指向 tail 节点的引用
         for (Node<E> t = tail, p = t;;) {
+            // 获取 tail 结点的next结点。因为tail结点有两种可能
+            // 如果 tail 节点的 next 结点不为空，则将入队结点设置成 tail 结点，
+            // 如果 tail 结点为空，则将入队结点设置成 tail 的 next 结点，所以 tail 结点并不总是尾结点
             Node<E> q = p.next;
             if (q == null) {
                 // p is last node
@@ -348,7 +267,7 @@ public class ConcurrentLinkedQueue<E> extends AbstractQueue<E>
                 // reachable.  Else the new tail is a better bet.
                 p = (t != (t = tail)) ? t : head;
             else
-                // Check for tail updates after two hops.
+                // 我们已经知道了 tail 并不总是队列真正的尾结点，所以下面的操作是 队列真正的对尾结点
                 p = (p != t && t != (t = tail)) ? t : q;
         }
     }
