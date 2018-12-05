@@ -137,53 +137,130 @@ public abstract class AbstractBeanDefinition extends BeanMetadataAttributeAccess
 
 	private volatile Object beanClass;
 
+	/**
+	 * bean的作用范围，对应 bean 属性 scope
+	 */
 	private String scope = SCOPE_DEFAULT;
 
+	/**
+	 * 是否是抽象，对应 bean 属性 abstract
+	 */
 	private boolean abstractFlag = false;
 
+	/**
+	 * 是否延迟加载，对应 bean 属性 lazy-init
+	 */
 	private boolean lazyInit = false;
 
+	/**
+	 * 自动注入模式，对应 bean 属性 autowire
+	 */
 	private int autowireMode = AUTOWIRE_NO;
 
+	/**
+	 * 依赖检查， Spring 3.0 后弃用这个属性
+	 */
 	private int dependencyCheck = DEPENDENCY_CHECK_NONE;
 
+	/**
+	 * 用来表示一个 bean 的实例化依靠另一个 bean 先实例化，对应 bean 属性 depend-on
+	 */
 	private String[] dependsOn;
 
+	/**
+	 * autowir-candidate 属性设置为 false，这样容器在查找自动装配对象时，
+	 * 将不考虑该 bean，即它不会被考虑作为其他 bean 自动装配的候选者，但是该 bean 本身还是可以使用自动装配注入其他 bean 的
+	 */
 	private boolean autowireCandidate = true;
 
+	/**
+	 * 自动装配时当出现多个 bean 候选者时，将作为首选者，对应 bean 属性 primary
+	 */
 	private boolean primary = false;
 
+
+	/**
+	 * 用于记录 Qualifier，应用子元素 qualifier
+	 */
 	private final Map<String, AutowireCandidateQualifier> qualifiers =
 			new LinkedHashMap<String, AutowireCandidateQualifier>(0);
 
+	/**
+	 * 允许访问非公开的构造器和方法，程序设置
+	 */
 	private boolean nonPublicAccessAllowed = true;
 
+	/**
+	 * 是否以一种宽松的模式解析构造函数，默认为 true
+	 */
 	private boolean lenientConstructorResolution = true;
 
+	/**
+	 * 对应 bean 属性 factory-bean
+	 */
 	private String factoryBeanName;
 
+	/**
+	 * 对应 bean 属性 factory-method
+	 */
 	private String factoryMethodName;
 
+	/**
+	 * 记录构造函数注入属性，对应 bean 属性 constructor-arg
+	 */
 	private ConstructorArgumentValues constructorArgumentValues;
 
+	/**
+	 * 普通属性集合
+	 */
 	private MutablePropertyValues propertyValues;
 
+	/**
+	 * 方法重写的持有者，记录lookup-method、replaced-method元素
+	 */
 	private MethodOverrides methodOverrides = new MethodOverrides();
 
+	/**
+	 * 初始化方法，对应 bean 属性 init-method
+	 */
 	private String initMethodName;
 
+	/**
+	 * 销毁方法，对应 bean 属性 destory-method
+	 */
 	private String destroyMethodName;
 
+	/**
+	 * 是否执行 init-method
+	 */
 	private boolean enforceInitMethod = true;
 
+	/**
+	 * 是否执行 destory-method
+	 */
 	private boolean enforceDestroyMethod = true;
 
+	/**
+	 * 是否是用户定义的而不是应用程序本身定义的，创建AOP时候为true
+	 */
 	private boolean synthetic = false;
 
+	/**
+	 * 定义这个 bean 的应用，
+	 * Application：用户
+	 * Infrastructure：完全内部使用，与用户无关
+	 * Support：某些复杂配置的一部分
+	 */
 	private int role = BeanDefinition.ROLE_APPLICATION;
 
+	/**
+	 * bean 的描述信息
+	 */
 	private String description;
 
+	/**
+	 * 这个 bean 定义的资源
+	 */
 	private Resource resource;
 
 

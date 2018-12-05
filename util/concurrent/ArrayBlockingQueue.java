@@ -17,16 +17,16 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
    
     private static final long serialVersionUID = -817911632652898426L;
 
-    /** The queued items */
+    /** 用来存放队列中的元素 */
     final Object[] items;
 
-    /** items index for next take, poll, peek or remove */
+    /** 出队元素的下标 */
     int takeIndex;
 
-    /** items index for next put, offer, or add */
+    /** 入队元素的下标 */
     int putIndex;
 
-    /** Number of elements in the queue */
+    /** 统计队列元素的个数 */
     int count;
 
     /*
@@ -34,7 +34,7 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
      * found in any textbook.
      */
 
-    /** Main lock guarding all access */
+    /** 用来保证线程安全的锁 */
     final ReentrantLock lock;
 
     /** Condition for waiting takes */
@@ -60,7 +60,7 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
     }
 
     /**
-     * Returns item at index i.
+     * 返回 i 下标的数组中的元素
      */
     @SuppressWarnings("unchecked")
     final E itemAt(int i) {
@@ -85,10 +85,15 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
         // assert lock.getHoldCount() == 1;
         // assert items[putIndex] == null;
         final Object[] items = this.items;
+        // 元素入队
         items[putIndex] = x;
+        // 计算下一个元素应该存放的下标
         if (++putIndex == items.length)
+            // 如果下一个元素的下标越界了，则将下标置为0
             putIndex = 0;
+
         count++;
+        // 唤醒等待取数据的线程
         notEmpty.signal();
     }
 
@@ -101,13 +106,18 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
         // assert items[takeIndex] != null;
         final Object[] items = this.items;
         @SuppressWarnings("unchecked")
+        // 从队列中获取元素的值放入变量 x 中
         E x = (E) items[takeIndex];
+        // 设置数组中对应取出的元素的位置的值为null
         items[takeIndex] = null;
+        // 如果下一个将要取出元素的下标已经等于数组的长度，要将下标置为0
         if (++takeIndex == items.length)
             takeIndex = 0;
+        // 队列中的元素的个数-1
         count--;
         if (itrs != null)
             itrs.elementDequeued();
+        // 唤醒 notFull 条件队列中的线程
         notFull.signal();
         return x;
     }
@@ -156,11 +166,7 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
     }
 
     /**
-     * Creates an {@code ArrayBlockingQueue} with the given (fixed)
-     * capacity and default access policy.
-     *
-     * @param capacity the capacity of this queue
-     * @throws IllegalArgumentException if {@code capacity < 1}
+     * 构造函数必须传入队列大小的参数，所以说该队列是有界队列，默认是Lock为非公平锁
      */
     public ArrayBlockingQueue(int capacity) {
         this(capacity, false);
@@ -249,17 +255,23 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
      * @throws NullPointerException if the specified element is null
      */
     public boolean offer(E e) {
+        // e 为 null时，则抛出空指针 NullPointerException 异常
         checkNotNull(e);
+
+        // 获取独占锁
         final ReentrantLock lock = this.lock;
         lock.lock();
         try {
+            // 如果队列满了，则返回false
             if (count == items.length)
                 return false;
             else {
+                // 否则插入元素
                 enqueue(e);
                 return true;
             }
         } finally {
+            // 释放锁
             lock.unlock();
         }
     }
@@ -274,10 +286,14 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
     public void put(E e) throws InterruptedException {
         checkNotNull(e);
         final ReentrantLock lock = this.lock;
+        // 获取可被中断锁
         lock.lockInterruptibly();
         try {
+            // 如果队列满了，则把当前线程放入 notFull 管理的条件队列中
             while (count == items.length)
                 notFull.await();
+
+            // 直到被唤醒然后插入元素
             enqueue(e);
         } finally {
             lock.unlock();
@@ -314,8 +330,10 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
 
     public E poll() {
         final ReentrantLock lock = this.lock;
+        // 加锁
         lock.lock();
         try {
+            // 当前队列为空，则返回null，不为空调用dequeue方法
             return (count == 0) ? null : dequeue();
         } finally {
             lock.unlock();
@@ -354,7 +372,7 @@ public class ArrayBlockingQueue<E> extends AbstractQueue<E>
         final ReentrantLock lock = this.lock;
         lock.lock();
         try {
-            return itemAt(takeIndex); // null when queue is empty
+            return itemAt(takeIndex); // 队列为空则返回null，队列不为null，返回头元素
         } finally {
             lock.unlock();
         }
