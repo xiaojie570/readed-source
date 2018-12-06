@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64981798-094b-4866-8f47-2ea910b67896" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/AbstractCollection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/concurrent/LinkedBlockingDeque.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/concurrent/LinkedBlockingQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java" afterPath="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReaderUtils.java" afterPath="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReaderUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java" afterPath="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/Queue.java" afterPath="$PROJECT_DIR$/util/Queue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java" afterPath="$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/concurrent/BlockingQueue.java" afterPath="$PROJECT_DIR$/util/concurrent/BlockingQueue.java" />
     </list>
     <ignored path="readedsource.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,28 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlockingQueue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/concurrent/BlockingQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.678572">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ArrayBlockingQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.464286">
+            <state vertical-scroll-proportion="0.0">
               <caret line="383" column="8" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
               <folding>
-                <element signature="e#1504#1505#0" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#4575#4576#0" expanded="true" />
-                <element signature="e#4612#4613#0" expanded="true" />
-                <element signature="e#7460#7461#0" expanded="true" />
-                <element signature="e#7495#7496#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1346#1347#0" expanded="false" />
+                <element signature="e#1402#1403#0" expanded="false" />
+                <element signature="e#20960#20961#0" expanded="false" />
+                <element signature="e#21012#21013#0" expanded="false" />
+                <element signature="e#23126#23127#0" expanded="false" />
+                <element signature="e#23158#23159#0" expanded="false" />
+                <element signature="e#26440#26441#0" expanded="false" />
+                <element signature="e#26481#26482#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -62,10 +50,14 @@
       <file leaf-file-name="DefaultBeanDefinitionDocumentReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/DefaultBeanDefinitionDocumentReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6785714">
+            <state vertical-scroll-proportion="0.0">
               <caret line="302" column="75" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="75" />
               <folding>
-                <element signature="e#0#12277#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3612#3613#0" expanded="false" />
+                <element signature="e#3644#3645#0" expanded="false" />
+                <element signature="e#3850#3851#0" expanded="false" />
+                <element signature="e#3901#3902#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,35 +66,20 @@
       <file leaf-file-name="AbstractQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/AbstractQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.428571">
+            <state vertical-scroll-proportion="0.0">
               <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#6410#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractCollection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/AbstractCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.821428">
-              <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-              <folding>
-                <element signature="e#8767#8768#0" expanded="true" />
-                <element signature="e#8824#8825#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeanDefinitionParserDelegate.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BeanDefinitionParserDelegate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.428571">
-              <caret line="394" column="38" selection-start-line="394" selection-start-column="38" selection-end-line="394" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.87068963">
+              <caret line="1153" column="0" selection-start-line="1115" selection-start-column="23" selection-end-line="1153" selection-end-column="0" />
               <folding>
-                <element signature="e#0#55979#0" expanded="true" />
+                <element signature="e#0#57189#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="e#14456#14457#0" expanded="true" />
                 <element signature="e#14483#14484#0" expanded="true" />
@@ -116,10 +93,19 @@
       <file leaf-file-name="AbstractBeanDefinitionParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/AbstractBeanDefinitionParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#9484#0" expanded="true" />
+                <element signature="e#0#9484#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#7206#7207#0" expanded="false" />
+                <element signature="e#7225#7226#0" expanded="false" />
+                <element signature="e#7713#7714#0" expanded="false" />
+                <element signature="e#7732#7733#0" expanded="false" />
+                <element signature="e#8086#8087#0" expanded="false" />
+                <element signature="e#8104#8105#0" expanded="false" />
+                <element signature="e#8833#8834#0" expanded="false" />
+                <element signature="e#8851#8852#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,22 +114,166 @@
       <file leaf-file-name="BeanDefinitionReaderUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReaderUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5714285">
+            <state vertical-scroll-proportion="0.0">
               <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
               <folding>
-                <element signature="e#0#7009#0" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractBeanDefinition.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AbstractBeanDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.030914">
-              <caret line="261" column="20" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="83" column="56" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="56" />
               <folding>
-                <element signature="e#0#36857#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#7316#7317#0" expanded="false" />
+                <element signature="e#7339#7340#0" expanded="false" />
+                <element signature="e#12999#13000#0" expanded="false" />
+                <element signature="e#13036#13037#0" expanded="false" />
+                <element signature="e#13445#13446#0" expanded="false" />
+                <element signature="e#13478#13479#0" expanded="false" />
+                <element signature="e#14324#14325#0" expanded="false" />
+                <element signature="e#14371#14372#0" expanded="false" />
+                <element signature="e#15634#15635#0" expanded="false" />
+                <element signature="e#15659#15660#0" expanded="false" />
+                <element signature="e#15763#15764#0" expanded="false" />
+                <element signature="e#15787#15788#0" expanded="false" />
+                <element signature="e#15970#15971#0" expanded="false" />
+                <element signature="e#16044#16045#0" expanded="false" />
+                <element signature="e#16225#16226#0" expanded="false" />
+                <element signature="e#16268#16269#0" expanded="false" />
+                <element signature="e#16609#16610#0" expanded="false" />
+                <element signature="e#16648#16649#0" expanded="false" />
+                <element signature="e#16861#16862#0" expanded="false" />
+                <element signature="e#16892#16893#0" expanded="false" />
+                <element signature="e#17153#17154#0" expanded="false" />
+                <element signature="e#17184#17185#0" expanded="false" />
+                <element signature="e#17379#17380#0" expanded="false" />
+                <element signature="e#17406#17407#0" expanded="false" />
+                <element signature="e#17895#17896#0" expanded="false" />
+                <element signature="e#17934#17935#0" expanded="false" />
+                <element signature="e#18043#18044#0" expanded="false" />
+                <element signature="e#18074#18075#0" expanded="false" />
+                <element signature="e#19221#19222#0" expanded="false" />
+                <element signature="e#19266#19267#0" expanded="false" />
+                <element signature="e#19350#19351#0" expanded="false" />
+                <element signature="e#19384#19385#0" expanded="false" />
+                <element signature="e#19846#19847#0" expanded="false" />
+                <element signature="e#19879#19880#0" expanded="false" />
+                <element signature="e#19988#19989#0" expanded="false" />
+                <element signature="e#20016#20017#0" expanded="false" />
+                <element signature="e#20558#20559#0" expanded="false" />
+                <element signature="e#20607#20608#0" expanded="false" />
+                <element signature="e#20757#20758#0" expanded="false" />
+                <element signature="e#20793#20794#0" expanded="false" />
+                <element signature="e#21047#21048#0" expanded="false" />
+                <element signature="e#21076#21077#0" expanded="false" />
+                <element signature="e#21190#21191#0" expanded="false" />
+                <element signature="e#21216#21217#0" expanded="false" />
+                <element signature="e#21633#21634#0" expanded="false" />
+                <element signature="e#21690#21691#0" expanded="false" />
+                <element signature="e#21827#21828#0" expanded="false" />
+                <element signature="e#21870#21871#0" expanded="false" />
+                <element signature="e#23362#23363#0" expanded="false" />
+                <element signature="e#23403#23404#0" expanded="false" />
+                <element signature="e#24029#24030#0" expanded="false" />
+                <element signature="e#24076#24077#0" expanded="false" />
+                <element signature="e#24303#24304#0" expanded="false" />
+                <element signature="e#24348#24349#0" expanded="false" />
+                <element signature="e#24450#24451#0" expanded="false" />
+                <element signature="e#24484#24485#0" expanded="false" />
+                <element signature="e#24897#24898#0" expanded="false" />
+                <element signature="e#24946#24947#0" expanded="false" />
+                <element signature="e#25045#25046#0" expanded="false" />
+                <element signature="e#25081#25082#0" expanded="false" />
+                <element signature="e#25549#25550#0" expanded="false" />
+                <element signature="e#25593#25594#0" expanded="false" />
+                <element signature="e#25728#25729#0" expanded="false" />
+                <element signature="e#25783#25784#0" expanded="false" />
+                <element signature="e#26153#26154#0" expanded="false" />
+                <element signature="e#26186#26187#0" expanded="false" />
+                <element signature="e#26635#26636#0" expanded="false" />
+                <element signature="e#26669#26670#0" expanded="false" />
+                <element signature="e#26858#26859#0" expanded="false" />
+                <element signature="e#26901#26902#0" expanded="false" />
+                <element signature="e#26996#26997#0" expanded="false" />
+                <element signature="e#27029#27030#0" expanded="false" />
+                <element signature="e#27237#27238#0" expanded="false" />
+                <element signature="e#27286#27287#0" expanded="false" />
+                <element signature="e#27431#27432#0" expanded="false" />
+                <element signature="e#27467#27468#0" expanded="false" />
+                <element signature="e#27654#27655#0" expanded="false" />
+                <element signature="e#27703#27704#0" expanded="false" />
+                <element signature="e#27797#27798#0" expanded="false" />
+                <element signature="e#27833#27834#0" expanded="false" />
+                <element signature="e#28053#28054#0" expanded="false" />
+                <element signature="e#28108#28109#0" expanded="false" />
+                <element signature="e#28260#28261#0" expanded="false" />
+                <element signature="e#28299#28300#0" expanded="false" />
+                <element signature="e#28577#28578#0" expanded="false" />
+                <element signature="e#28610#28611#0" expanded="false" />
+                <element signature="e#28761#28762#0" expanded="false" />
+                <element signature="e#28789#28790#0" expanded="false" />
+                <element signature="e#28888#28889#0" expanded="false" />
+                <element signature="e#28911#28912#0" expanded="false" />
+                <element signature="e#29015#29016#0" expanded="false" />
+                <element signature="e#29038#29039#0" expanded="false" />
+                <element signature="e#29161#29162#0" expanded="false" />
+                <element signature="e#29198#29199#0" expanded="false" />
+                <element signature="e#29319#29320#0" expanded="false" />
+                <element signature="e#29349#29350#0" expanded="false" />
+                <element signature="e#29523#29524#0" expanded="false" />
+                <element signature="e#29554#29555#0" expanded="false" />
+                <element signature="e#29659#29660#0" expanded="false" />
+                <element signature="e#29686#29687#0" expanded="false" />
+                <element signature="e#30165#30166#0" expanded="false" />
+                <element signature="e#30242#30243#0" expanded="false" />
+                <element signature="e#33086#33087#0" expanded="false" />
+                <element signature="e#33121#33122#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedBlockingDeque.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/concurrent/LinkedBlockingDeque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.071428">
+              <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+              <folding>
+                <element signature="e#3947#3948#0" expanded="true" />
+                <element signature="e#3986#3987#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedBlockingQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/concurrent/LinkedBlockingQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.321428">
+              <caret line="162" column="43" selection-start-line="162" selection-start-column="43" selection-end-line="162" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#34035#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#7331#7332#0" expanded="false" />
+                <element signature="e#7370#7371#0" expanded="false" />
+                <element signature="e#9154#9155#0" expanded="false" />
+                <element signature="e#9188#9189#0" expanded="false" />
+                <element signature="e#9899#9900#0" expanded="false" />
+                <element signature="e#9944#9945#0" expanded="false" />
+                <element signature="e#23187#23188#0" expanded="false" />
+                <element signature="e#23239#23240#0" expanded="false" />
+                <element signature="e#25181#25182#0" expanded="false" />
+                <element signature="e#25213#25214#0" expanded="false" />
+                <element signature="e#25899#25900#0" expanded="false" />
+                <element signature="e#25945#25946#0" expanded="false" />
+                <element signature="e#32327#32328#0" expanded="false" />
+                <element signature="e#32377#32378#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -152,9 +282,10 @@
       <file leaf-file-name="BeanDefinitionParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
+                <element signature="e#0#2373#0" expanded="false" />
                 <element signature="imports" expanded="false" />
               </folding>
             </state>
@@ -189,8 +320,10 @@
         <option value="$PROJECT_DIR$/util/concurrent/BlockingQueue.java" />
         <option value="$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java" />
         <option value="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReaderUtils.java" />
-        <option value="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java" />
         <option value="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java" />
+        <option value="$PROJECT_DIR$/util/concurrent/LinkedBlockingDeque.java" />
+        <option value="$PROJECT_DIR$/util/concurrent/LinkedBlockingQueue.java" />
+        <option value="$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java" />
       </list>
     </option>
   </component>
@@ -207,9 +340,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="52" />
-    <option name="width" value="1920" />
-    <option name="height" value="988" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -236,12 +370,277 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-framework-4.3.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-framework-4.3.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-framework-4.3.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-framework-4.3.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-framework-4.3.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-framework-4.3.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-framework-4.3.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readedsource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-framework-4.3.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,8 +651,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\readedsource\util" />
       <recent name="D:\Java\readedsource\util\concurrent" />
+      <recent name="D:\Java\readedsource\util" />
     </key>
   </component>
   <component name="RunManager">
@@ -648,6 +1047,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -675,15 +1079,16 @@
       <updated>1543819506554</updated>
       <workItem from="1543819507999" duration="6546000" />
       <workItem from="1543884842859" duration="6457000" />
-      <workItem from="1543909759510" duration="17734000" />
+      <workItem from="1543909759510" duration="19404000" />
+      <workItem from="1544015446186" duration="6415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30737000" />
+    <option name="totallyTimeSpent" value="38822000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1920" height="988" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -692,22 +1097,22 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32329988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29319954" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.282516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19354838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24200426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -726,67 +1131,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/BlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="237" column="22" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="22" />
-          <folding>
-            <element signature="e#1504#1505#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#4575#4576#0" expanded="true" />
-            <element signature="e#4612#4613#0" expanded="true" />
-            <element signature="e#7460#7461#0" expanded="true" />
-            <element signature="e#7495#7496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/XmlBeanDefinitionReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="299" column="15" selection-start-line="299" selection-start-column="15" selection-end-line="299" selection-end-column="15" />
+          <caret line="383" column="8" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#5270#5271#0" expanded="false" />
-            <element signature="e#5292#5293#0" expanded="false" />
-            <element signature="e#6371#6372#0" expanded="false" />
-            <element signature="e#6414#6415#0" expanded="false" />
-            <element signature="e#6498#6499#0" expanded="false" />
-            <element signature="e#6531#6532#0" expanded="false" />
-            <element signature="e#6881#6882#0" expanded="false" />
-            <element signature="e#6924#6925#0" expanded="false" />
-            <element signature="e#7044#7045#0" expanded="false" />
-            <element signature="e#7077#7078#0" expanded="false" />
-            <element signature="e#9564#9565#0" expanded="false" />
-            <element signature="e#9607#9608#0" expanded="false" />
-            <element signature="e#10566#10567#0" expanded="false" />
-            <element signature="e#10605#10606#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionDocumentReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1346#1347#0" expanded="false" />
+            <element signature="e#1402#1403#0" expanded="false" />
+            <element signature="e#20960#20961#0" expanded="false" />
+            <element signature="e#21012#21013#0" expanded="false" />
+            <element signature="e#23126#23127#0" expanded="false" />
+            <element signature="e#23158#23159#0" expanded="false" />
+            <element signature="e#26440#26441#0" expanded="false" />
+            <element signature="e#26481#26482#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -794,330 +1152,42 @@
     <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/DefaultBeanDefinitionDocumentReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="302" column="60" selection-start-line="302" selection-start-column="60" selection-end-line="302" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#12277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#55979#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#14456#14457#0" expanded="true" />
-            <element signature="e#14483#14484#0" expanded="true" />
-            <element signature="e#15743#15744#0" expanded="true" />
-            <element signature="e#15794#15795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/ConcurrentLinkedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="249" column="31" selection-start-line="249" selection-start-column="31" selection-end-line="249" selection-end-column="31" />
-          <folding>
-            <element signature="e#5142#5143#0" expanded="false" />
-            <element signature="e#5228#5229#0" expanded="false" />
-            <element signature="e#6974#6975#0" expanded="false" />
-            <element signature="e#7021#7022#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/CopyOnWriteArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="435" column="20" selection-start-line="435" selection-start-column="20" selection-end-line="435" selection-end-column="20" />
-          <folding>
-            <element signature="e#3422#3423#0" expanded="true" />
-            <element signature="e#3450#3451#0" expanded="true" />
-            <element signature="e#3636#3637#0" expanded="true" />
-            <element signature="e#3675#3676#0" expanded="true" />
-            <element signature="e#13692#13693#0" expanded="true" />
-            <element signature="e#13737#13738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/Deque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/BlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="237" column="22" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="22" />
-          <folding>
-            <element signature="e#1504#1505#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#4575#4576#0" expanded="true" />
-            <element signature="e#4612#4613#0" expanded="true" />
-            <element signature="e#7460#7461#0" expanded="true" />
-            <element signature="e#7495#7496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/ConcurrentLinkedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#5142#5143#0" expanded="false" />
-            <element signature="e#5228#5229#0" expanded="false" />
-            <element signature="e#6974#6975#0" expanded="false" />
-            <element signature="e#7021#7022#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/CopyOnWriteArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="435" column="20" selection-start-line="435" selection-start-column="20" selection-end-line="435" selection-end-column="20" />
-          <folding>
-            <element signature="e#3422#3423#0" expanded="true" />
-            <element signature="e#3450#3451#0" expanded="true" />
-            <element signature="e#3636#3637#0" expanded="true" />
-            <element signature="e#3675#3676#0" expanded="true" />
-            <element signature="e#13692#13693#0" expanded="true" />
-            <element signature="e#13737#13738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/Deque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/Deque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/XmlBeanDefinitionReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="299" column="15" selection-start-line="299" selection-start-column="15" selection-end-line="299" selection-end-column="15" />
+          <caret line="302" column="75" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#5270#5271#0" expanded="false" />
-            <element signature="e#5292#5293#0" expanded="false" />
-            <element signature="e#6371#6372#0" expanded="false" />
-            <element signature="e#6414#6415#0" expanded="false" />
-            <element signature="e#6498#6499#0" expanded="false" />
-            <element signature="e#6531#6532#0" expanded="false" />
-            <element signature="e#6881#6882#0" expanded="false" />
-            <element signature="e#6924#6925#0" expanded="false" />
-            <element signature="e#7044#7045#0" expanded="false" />
-            <element signature="e#7077#7078#0" expanded="false" />
-            <element signature="e#9564#9565#0" expanded="false" />
-            <element signature="e#9607#9608#0" expanded="false" />
-            <element signature="e#10566#10567#0" expanded="false" />
-            <element signature="e#10605#10606#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionDocumentReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/AbstractExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2940#2941#0" expanded="false" />
-            <element signature="e#2990#2991#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/ConcurrentLinkedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.535714">
-          <caret line="244" column="49" selection-start-line="244" selection-start-column="49" selection-end-line="244" selection-end-column="49" />
-          <folding>
-            <element signature="e#5142#5143#0" expanded="false" />
-            <element signature="e#5228#5229#0" expanded="false" />
-            <element signature="e#6974#6975#0" expanded="false" />
-            <element signature="e#7021#7022#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.892858">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/CopyOnWriteArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="18.714285">
-          <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
-          <folding>
-            <element signature="e#3422#3423#0" expanded="true" />
-            <element signature="e#3450#3451#0" expanded="true" />
-            <element signature="e#3636#3637#0" expanded="true" />
-            <element signature="e#3675#3676#0" expanded="true" />
-            <element signature="e#13692#13693#0" expanded="true" />
-            <element signature="e#13737#13738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/BlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.678572">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/AbstractCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.821428">
-          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-          <folding>
-            <element signature="e#8767#8768#0" expanded="true" />
-            <element signature="e#8824#8825#0" expanded="true" />
+            <element signature="e#3612#3613#0" expanded="false" />
+            <element signature="e#3644#3645#0" expanded="false" />
+            <element signature="e#3850#3851#0" expanded="false" />
+            <element signature="e#3901#3902#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/AbstractQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.428571">
+        <state vertical-scroll-proportion="0.0">
           <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#6410#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.464286">
-          <caret line="383" column="8" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
-          <folding>
-            <element signature="e#1504#1505#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#4575#4576#0" expanded="true" />
-            <element signature="e#4612#4613#0" expanded="true" />
-            <element signature="e#7460#7461#0" expanded="true" />
-            <element signature="e#7495#7496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParser.java">
+    <entry file="file://$PROJECT_DIR$/util/AbstractCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReaderUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5714285">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#7009#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/DefaultBeanDefinitionDocumentReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714">
-          <caret line="302" column="75" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#12277#0" expanded="true" />
+            <element signature="e#8767#8768#0" expanded="false" />
+            <element signature="e#8824#8825#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.428571">
+        <state vertical-scroll-proportion="0.0">
           <caret line="394" column="38" selection-start-line="394" selection-start-column="38" selection-end-line="394" selection-end-column="38" />
           <folding>
-            <element signature="e#0#55979#0" expanded="true" />
+            <element signature="e#0#57189#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#14456#14457#0" expanded="true" />
             <element signature="e#14483#14484#0" expanded="true" />
@@ -1132,17 +1202,651 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9484#0" expanded="true" />
+            <element signature="e#0#9484#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#7206#7207#0" expanded="false" />
+            <element signature="e#7225#7226#0" expanded="false" />
+            <element signature="e#7713#7714#0" expanded="false" />
+            <element signature="e#7732#7733#0" expanded="false" />
+            <element signature="e#8086#8087#0" expanded="false" />
+            <element signature="e#8104#8105#0" expanded="false" />
+            <element signature="e#8833#8834#0" expanded="false" />
+            <element signature="e#8851#8852#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReaderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.030914">
-          <caret line="261" column="20" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="56" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="56" />
           <folding>
-            <element signature="e#0#36857#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#7316#7317#0" expanded="false" />
+            <element signature="e#7339#7340#0" expanded="false" />
+            <element signature="e#12999#13000#0" expanded="false" />
+            <element signature="e#13036#13037#0" expanded="false" />
+            <element signature="e#13445#13446#0" expanded="false" />
+            <element signature="e#13478#13479#0" expanded="false" />
+            <element signature="e#14324#14325#0" expanded="false" />
+            <element signature="e#14371#14372#0" expanded="false" />
+            <element signature="e#15634#15635#0" expanded="false" />
+            <element signature="e#15659#15660#0" expanded="false" />
+            <element signature="e#15763#15764#0" expanded="false" />
+            <element signature="e#15787#15788#0" expanded="false" />
+            <element signature="e#15970#15971#0" expanded="false" />
+            <element signature="e#16044#16045#0" expanded="false" />
+            <element signature="e#16225#16226#0" expanded="false" />
+            <element signature="e#16268#16269#0" expanded="false" />
+            <element signature="e#16609#16610#0" expanded="false" />
+            <element signature="e#16648#16649#0" expanded="false" />
+            <element signature="e#16861#16862#0" expanded="false" />
+            <element signature="e#16892#16893#0" expanded="false" />
+            <element signature="e#17153#17154#0" expanded="false" />
+            <element signature="e#17184#17185#0" expanded="false" />
+            <element signature="e#17379#17380#0" expanded="false" />
+            <element signature="e#17406#17407#0" expanded="false" />
+            <element signature="e#17895#17896#0" expanded="false" />
+            <element signature="e#17934#17935#0" expanded="false" />
+            <element signature="e#18043#18044#0" expanded="false" />
+            <element signature="e#18074#18075#0" expanded="false" />
+            <element signature="e#19221#19222#0" expanded="false" />
+            <element signature="e#19266#19267#0" expanded="false" />
+            <element signature="e#19350#19351#0" expanded="false" />
+            <element signature="e#19384#19385#0" expanded="false" />
+            <element signature="e#19846#19847#0" expanded="false" />
+            <element signature="e#19879#19880#0" expanded="false" />
+            <element signature="e#19988#19989#0" expanded="false" />
+            <element signature="e#20016#20017#0" expanded="false" />
+            <element signature="e#20558#20559#0" expanded="false" />
+            <element signature="e#20607#20608#0" expanded="false" />
+            <element signature="e#20757#20758#0" expanded="false" />
+            <element signature="e#20793#20794#0" expanded="false" />
+            <element signature="e#21047#21048#0" expanded="false" />
+            <element signature="e#21076#21077#0" expanded="false" />
+            <element signature="e#21190#21191#0" expanded="false" />
+            <element signature="e#21216#21217#0" expanded="false" />
+            <element signature="e#21633#21634#0" expanded="false" />
+            <element signature="e#21690#21691#0" expanded="false" />
+            <element signature="e#21827#21828#0" expanded="false" />
+            <element signature="e#21870#21871#0" expanded="false" />
+            <element signature="e#23362#23363#0" expanded="false" />
+            <element signature="e#23403#23404#0" expanded="false" />
+            <element signature="e#24029#24030#0" expanded="false" />
+            <element signature="e#24076#24077#0" expanded="false" />
+            <element signature="e#24303#24304#0" expanded="false" />
+            <element signature="e#24348#24349#0" expanded="false" />
+            <element signature="e#24450#24451#0" expanded="false" />
+            <element signature="e#24484#24485#0" expanded="false" />
+            <element signature="e#24897#24898#0" expanded="false" />
+            <element signature="e#24946#24947#0" expanded="false" />
+            <element signature="e#25045#25046#0" expanded="false" />
+            <element signature="e#25081#25082#0" expanded="false" />
+            <element signature="e#25549#25550#0" expanded="false" />
+            <element signature="e#25593#25594#0" expanded="false" />
+            <element signature="e#25728#25729#0" expanded="false" />
+            <element signature="e#25783#25784#0" expanded="false" />
+            <element signature="e#26153#26154#0" expanded="false" />
+            <element signature="e#26186#26187#0" expanded="false" />
+            <element signature="e#26635#26636#0" expanded="false" />
+            <element signature="e#26669#26670#0" expanded="false" />
+            <element signature="e#26858#26859#0" expanded="false" />
+            <element signature="e#26901#26902#0" expanded="false" />
+            <element signature="e#26996#26997#0" expanded="false" />
+            <element signature="e#27029#27030#0" expanded="false" />
+            <element signature="e#27237#27238#0" expanded="false" />
+            <element signature="e#27286#27287#0" expanded="false" />
+            <element signature="e#27431#27432#0" expanded="false" />
+            <element signature="e#27467#27468#0" expanded="false" />
+            <element signature="e#27654#27655#0" expanded="false" />
+            <element signature="e#27703#27704#0" expanded="false" />
+            <element signature="e#27797#27798#0" expanded="false" />
+            <element signature="e#27833#27834#0" expanded="false" />
+            <element signature="e#28053#28054#0" expanded="false" />
+            <element signature="e#28108#28109#0" expanded="false" />
+            <element signature="e#28260#28261#0" expanded="false" />
+            <element signature="e#28299#28300#0" expanded="false" />
+            <element signature="e#28577#28578#0" expanded="false" />
+            <element signature="e#28610#28611#0" expanded="false" />
+            <element signature="e#28761#28762#0" expanded="false" />
+            <element signature="e#28789#28790#0" expanded="false" />
+            <element signature="e#28888#28889#0" expanded="false" />
+            <element signature="e#28911#28912#0" expanded="false" />
+            <element signature="e#29015#29016#0" expanded="false" />
+            <element signature="e#29038#29039#0" expanded="false" />
+            <element signature="e#29161#29162#0" expanded="false" />
+            <element signature="e#29198#29199#0" expanded="false" />
+            <element signature="e#29319#29320#0" expanded="false" />
+            <element signature="e#29349#29350#0" expanded="false" />
+            <element signature="e#29523#29524#0" expanded="false" />
+            <element signature="e#29554#29555#0" expanded="false" />
+            <element signature="e#29659#29660#0" expanded="false" />
+            <element signature="e#29686#29687#0" expanded="false" />
+            <element signature="e#30165#30166#0" expanded="false" />
+            <element signature="e#30242#30243#0" expanded="false" />
+            <element signature="e#33086#33087#0" expanded="false" />
+            <element signature="e#33121#33122#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/LinkedBlockingDeque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3986#3987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2373#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/BlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="237" column="22" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1346#1347#0" expanded="false" />
+            <element signature="e#1402#1403#0" expanded="false" />
+            <element signature="e#20960#20961#0" expanded="false" />
+            <element signature="e#21012#21013#0" expanded="false" />
+            <element signature="e#23126#23127#0" expanded="false" />
+            <element signature="e#23158#23159#0" expanded="false" />
+            <element signature="e#26440#26441#0" expanded="false" />
+            <element signature="e#26481#26482#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/XmlBeanDefinitionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="15" selection-start-line="299" selection-start-column="15" selection-end-line="299" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionDocumentReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/DefaultBeanDefinitionDocumentReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="302" column="60" selection-start-line="302" selection-start-column="60" selection-end-line="302" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3612#3613#0" expanded="false" />
+            <element signature="e#3644#3645#0" expanded="false" />
+            <element signature="e#3850#3851#0" expanded="false" />
+            <element signature="e#3901#3902#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#57189#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#14456#14457#0" expanded="true" />
+            <element signature="e#14483#14484#0" expanded="true" />
+            <element signature="e#15743#15744#0" expanded="true" />
+            <element signature="e#15794#15795#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/ConcurrentLinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="249" column="31" selection-start-line="249" selection-start-column="31" selection-end-line="249" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/CopyOnWriteArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="435" column="20" selection-start-line="435" selection-start-column="20" selection-end-line="435" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/BlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="237" column="22" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1346#1347#0" expanded="false" />
+            <element signature="e#1402#1403#0" expanded="false" />
+            <element signature="e#20960#20961#0" expanded="false" />
+            <element signature="e#21012#21013#0" expanded="false" />
+            <element signature="e#23126#23127#0" expanded="false" />
+            <element signature="e#23158#23159#0" expanded="false" />
+            <element signature="e#26440#26441#0" expanded="false" />
+            <element signature="e#26481#26482#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/ConcurrentLinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/CopyOnWriteArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="435" column="20" selection-start-line="435" selection-start-column="20" selection-end-line="435" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/locks/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/XmlBeanDefinitionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="15" selection-start-line="299" selection-start-column="15" selection-end-line="299" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionDocumentReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/AbstractExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/ConcurrentLinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.535714">
+          <caret line="244" column="49" selection-start-line="244" selection-start-column="49" selection-end-line="244" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.892858">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/CopyOnWriteArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.714285">
+          <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/BlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.678572">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+          <folding>
+            <element signature="e#8767#8768#0" expanded="false" />
+            <element signature="e#8824#8825#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/AbstractQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/ArrayBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="383" column="8" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1346#1347#0" expanded="false" />
+            <element signature="e#1402#1403#0" expanded="false" />
+            <element signature="e#20960#20961#0" expanded="false" />
+            <element signature="e#21012#21013#0" expanded="false" />
+            <element signature="e#23126#23127#0" expanded="false" />
+            <element signature="e#23158#23159#0" expanded="false" />
+            <element signature="e#26440#26441#0" expanded="false" />
+            <element signature="e#26481#26482#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2373#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReaderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/DefaultBeanDefinitionDocumentReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="302" column="75" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3612#3613#0" expanded="false" />
+            <element signature="e#3644#3645#0" expanded="false" />
+            <element signature="e#3850#3851#0" expanded="false" />
+            <element signature="e#3901#3902#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/AbstractBeanDefinitionParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9484#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#7206#7207#0" expanded="false" />
+            <element signature="e#7225#7226#0" expanded="false" />
+            <element signature="e#7713#7714#0" expanded="false" />
+            <element signature="e#7732#7733#0" expanded="false" />
+            <element signature="e#8086#8087#0" expanded="false" />
+            <element signature="e#8104#8105#0" expanded="false" />
+            <element signature="e#8833#8834#0" expanded="false" />
+            <element signature="e#8851#8852#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="56" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#7316#7317#0" expanded="false" />
+            <element signature="e#7339#7340#0" expanded="false" />
+            <element signature="e#12999#13000#0" expanded="false" />
+            <element signature="e#13036#13037#0" expanded="false" />
+            <element signature="e#13445#13446#0" expanded="false" />
+            <element signature="e#13478#13479#0" expanded="false" />
+            <element signature="e#14324#14325#0" expanded="false" />
+            <element signature="e#14371#14372#0" expanded="false" />
+            <element signature="e#15634#15635#0" expanded="false" />
+            <element signature="e#15659#15660#0" expanded="false" />
+            <element signature="e#15763#15764#0" expanded="false" />
+            <element signature="e#15787#15788#0" expanded="false" />
+            <element signature="e#15970#15971#0" expanded="false" />
+            <element signature="e#16044#16045#0" expanded="false" />
+            <element signature="e#16225#16226#0" expanded="false" />
+            <element signature="e#16268#16269#0" expanded="false" />
+            <element signature="e#16609#16610#0" expanded="false" />
+            <element signature="e#16648#16649#0" expanded="false" />
+            <element signature="e#16861#16862#0" expanded="false" />
+            <element signature="e#16892#16893#0" expanded="false" />
+            <element signature="e#17153#17154#0" expanded="false" />
+            <element signature="e#17184#17185#0" expanded="false" />
+            <element signature="e#17379#17380#0" expanded="false" />
+            <element signature="e#17406#17407#0" expanded="false" />
+            <element signature="e#17895#17896#0" expanded="false" />
+            <element signature="e#17934#17935#0" expanded="false" />
+            <element signature="e#18043#18044#0" expanded="false" />
+            <element signature="e#18074#18075#0" expanded="false" />
+            <element signature="e#19221#19222#0" expanded="false" />
+            <element signature="e#19266#19267#0" expanded="false" />
+            <element signature="e#19350#19351#0" expanded="false" />
+            <element signature="e#19384#19385#0" expanded="false" />
+            <element signature="e#19846#19847#0" expanded="false" />
+            <element signature="e#19879#19880#0" expanded="false" />
+            <element signature="e#19988#19989#0" expanded="false" />
+            <element signature="e#20016#20017#0" expanded="false" />
+            <element signature="e#20558#20559#0" expanded="false" />
+            <element signature="e#20607#20608#0" expanded="false" />
+            <element signature="e#20757#20758#0" expanded="false" />
+            <element signature="e#20793#20794#0" expanded="false" />
+            <element signature="e#21047#21048#0" expanded="false" />
+            <element signature="e#21076#21077#0" expanded="false" />
+            <element signature="e#21190#21191#0" expanded="false" />
+            <element signature="e#21216#21217#0" expanded="false" />
+            <element signature="e#21633#21634#0" expanded="false" />
+            <element signature="e#21690#21691#0" expanded="false" />
+            <element signature="e#21827#21828#0" expanded="false" />
+            <element signature="e#21870#21871#0" expanded="false" />
+            <element signature="e#23362#23363#0" expanded="false" />
+            <element signature="e#23403#23404#0" expanded="false" />
+            <element signature="e#24029#24030#0" expanded="false" />
+            <element signature="e#24076#24077#0" expanded="false" />
+            <element signature="e#24303#24304#0" expanded="false" />
+            <element signature="e#24348#24349#0" expanded="false" />
+            <element signature="e#24450#24451#0" expanded="false" />
+            <element signature="e#24484#24485#0" expanded="false" />
+            <element signature="e#24897#24898#0" expanded="false" />
+            <element signature="e#24946#24947#0" expanded="false" />
+            <element signature="e#25045#25046#0" expanded="false" />
+            <element signature="e#25081#25082#0" expanded="false" />
+            <element signature="e#25549#25550#0" expanded="false" />
+            <element signature="e#25593#25594#0" expanded="false" />
+            <element signature="e#25728#25729#0" expanded="false" />
+            <element signature="e#25783#25784#0" expanded="false" />
+            <element signature="e#26153#26154#0" expanded="false" />
+            <element signature="e#26186#26187#0" expanded="false" />
+            <element signature="e#26635#26636#0" expanded="false" />
+            <element signature="e#26669#26670#0" expanded="false" />
+            <element signature="e#26858#26859#0" expanded="false" />
+            <element signature="e#26901#26902#0" expanded="false" />
+            <element signature="e#26996#26997#0" expanded="false" />
+            <element signature="e#27029#27030#0" expanded="false" />
+            <element signature="e#27237#27238#0" expanded="false" />
+            <element signature="e#27286#27287#0" expanded="false" />
+            <element signature="e#27431#27432#0" expanded="false" />
+            <element signature="e#27467#27468#0" expanded="false" />
+            <element signature="e#27654#27655#0" expanded="false" />
+            <element signature="e#27703#27704#0" expanded="false" />
+            <element signature="e#27797#27798#0" expanded="false" />
+            <element signature="e#27833#27834#0" expanded="false" />
+            <element signature="e#28053#28054#0" expanded="false" />
+            <element signature="e#28108#28109#0" expanded="false" />
+            <element signature="e#28260#28261#0" expanded="false" />
+            <element signature="e#28299#28300#0" expanded="false" />
+            <element signature="e#28577#28578#0" expanded="false" />
+            <element signature="e#28610#28611#0" expanded="false" />
+            <element signature="e#28761#28762#0" expanded="false" />
+            <element signature="e#28789#28790#0" expanded="false" />
+            <element signature="e#28888#28889#0" expanded="false" />
+            <element signature="e#28911#28912#0" expanded="false" />
+            <element signature="e#29015#29016#0" expanded="false" />
+            <element signature="e#29038#29039#0" expanded="false" />
+            <element signature="e#29161#29162#0" expanded="false" />
+            <element signature="e#29198#29199#0" expanded="false" />
+            <element signature="e#29319#29320#0" expanded="false" />
+            <element signature="e#29349#29350#0" expanded="false" />
+            <element signature="e#29523#29524#0" expanded="false" />
+            <element signature="e#29554#29555#0" expanded="false" />
+            <element signature="e#29659#29660#0" expanded="false" />
+            <element signature="e#29686#29687#0" expanded="false" />
+            <element signature="e#30165#30166#0" expanded="false" />
+            <element signature="e#30242#30243#0" expanded="false" />
+            <element signature="e#33086#33087#0" expanded="false" />
+            <element signature="e#33121#33122#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/LinkedBlockingDeque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.071428">
+          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+          <folding>
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3986#3987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/concurrent/LinkedBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.321428">
+          <caret line="162" column="43" selection-start-line="162" selection-start-column="43" selection-end-line="162" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#34035#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#7331#7332#0" expanded="false" />
+            <element signature="e#7370#7371#0" expanded="false" />
+            <element signature="e#9154#9155#0" expanded="false" />
+            <element signature="e#9188#9189#0" expanded="false" />
+            <element signature="e#9899#9900#0" expanded="false" />
+            <element signature="e#9944#9945#0" expanded="false" />
+            <element signature="e#23187#23188#0" expanded="false" />
+            <element signature="e#23239#23240#0" expanded="false" />
+            <element signature="e#25181#25182#0" expanded="false" />
+            <element signature="e#25213#25214#0" expanded="false" />
+            <element signature="e#25899#25900#0" expanded="false" />
+            <element signature="e#25945#25946#0" expanded="false" />
+            <element signature="e#32327#32328#0" expanded="false" />
+            <element signature="e#32377#32378#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-framework-4.3.9/spring-beans/src/main/java/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87068963">
+          <caret line="1153" column="0" selection-start-line="1115" selection-start-column="23" selection-end-line="1153" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#57189#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#14456#14457#0" expanded="true" />
+            <element signature="e#14483#14484#0" expanded="true" />
+            <element signature="e#15743#15744#0" expanded="true" />
+            <element signature="e#15794#15795#0" expanded="true" />
           </folding>
         </state>
       </provider>
